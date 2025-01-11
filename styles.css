@@ -53,23 +53,17 @@ nav ul li a:hover {
     align-items: center;
     color: #ffd700;
     text-shadow: 3px 3px 5px black;
-    padding-top: 80px; /* För att undvika att täckas av headern */
+    padding-top: 80px;
 }
 
-#start h1 {
-    font-size: 5em;
-    margin: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
+/* Logotyp */
+#start .logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-#start p {
-    font-size: 1.5em;
-    margin: 20px 0;
-    max-width: 600px;
-}
-
+/* Offertknapp */
 #start button {
     padding: 15px 30px;
     font-size: 1.2em;
@@ -93,7 +87,6 @@ section {
     text-align: left;
 }
 
-/* Om oss och kontakt */
 #kontakt p, #om-oss p {
     font-size: 1.2em;
     line-height: 1.8;
