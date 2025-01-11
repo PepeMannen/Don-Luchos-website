@@ -3,7 +3,7 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #000000, #333300);
+    background: linear-gradient(to bottom, #8b0000, #000000);
     color: #ffd700;
     text-align: center;
     overflow-x: hidden;
@@ -54,9 +54,9 @@ nav ul li a:hover {
 }
 
 .logo {
-    width: 300px;
+    width: 350px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 button {
@@ -117,9 +117,20 @@ form button:hover {
     background-color: #ffc107;
 }
 
+/* Vanliga frågor */
+#faq .question {
+    color: #ff4500;
+    font-weight: bold;
+}
+
+#faq .answer {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
-    background-color: #222;
+    background-color: #8b0000;
     color: #ffd700;
     padding: 20px 0;
     text-align: center;
