@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Don Luchos Catering</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Videosektion -->
-    <section id="hero">
-        <video autoplay muted loop playsinline id="background-video">
-            <source src="din-video.mp4" type="video/mp4">
-            Din webbläsare stödjer inte HTML5-video.
-        </video>
-        <div class="overlay"></div>
-        <div class="content">
-            <img src="logo.png" alt="Don Luchos Logo" class="logo">
-            <button onclick="scrollToOffer()">Få offertförslag</button>
-        </div>
-    </section>
+    <!-- Navigering -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#om-oss">Om oss</a></li>
+                <li><a href="#foodbike">Foodbike</a></li>
+                <li><a href="#faq">Vanliga frågor</a></li>
+                <li><a href="#kundomdomen">Kundomdömen</a></li>
+                <li><a href="#meny">Meny</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Övrigt innehåll -->
+    <!-- Huvudinnehåll -->
     <main>
-        <section id="om-oss">
-            <h2>Om oss</h2>
-            <p>Don Luchos startade med en passion för att sprida smaken av Latinamerika i Sverige. Vi erbjuder catering med autentiska rätter som ger en unik matupplevelse.</p>
+        <section id="hero">
+            <img src="logo.png" alt="Don Luchos Logo" class="logo">
+            <button onclick="scrollToOffer()">Få en offertförfrågan</button>
         </section>
 
-        <section id="kontakt">
-            <h2>Kontakt</h2>
-            <p>Har du frågor eller vill boka catering? Kontakta oss på:</p>
-            <p><strong>Email:</strong> <a href="mailto:donluchos.swe@gmail.com">donluchos.swe@gmail.com</a></p>
-            <p><strong>Telefon:</strong> 070-409 09 13</p>
+        <!-- Offertformulär -->
+        <section id="offert">
+            <h2>Offertförfrågan</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Ditt namn" required>
+                <input type="email" name="email" placeholder="Din e-post" required>
+                <textarea name="message" placeholder="Berätta vad du behöver" rows="5" required></textarea>
+                <button type="submit">Skicka offertförfrågan</button>
+            </form>
         </section>
     </main>
 
