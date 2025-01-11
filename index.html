@@ -9,56 +9,34 @@
 </head>
 <body>
 
-    <!-- Navigering -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#om-oss">Om oss</a></li>
-                <li><a href="#meny">Meny</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Startsida med logotyp och offertknapp -->
-    <section id="start">
-        <img src="logo.png" alt="Don Luchos Logo" class="logo">
-        <p>Äkta latinamerikansk catering – vi tar smaken av Latinamerika till dig!</p>
-        <button onclick="scrollToOffer()">Be om offert</button>
+    <!-- Videosektion -->
+    <section id="hero">
+        <video autoplay muted loop playsinline id="background-video">
+            <source src="din-video.mp4" type="video/mp4">
+            Din webbläsare stödjer inte HTML5-video.
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+            <img src="logo.png" alt="Don Luchos Logo" class="logo">
+            <button onclick="scrollToOffer()">Få offertförslag</button>
+        </div>
     </section>
 
-    <!-- Om oss -->
-    <section id="om-oss">
-        <h2>Om oss</h2>
-        <p>Don Luchos startade med en passion för att sprida smaken av Latinamerika i Sverige. Vi erbjuder catering med autentiska rätter som ger en unik matupplevelse.</p>
-    </section>
+    <!-- Övrigt innehåll -->
+    <main>
+        <section id="om-oss">
+            <h2>Om oss</h2>
+            <p>Don Luchos startade med en passion för att sprida smaken av Latinamerika i Sverige. Vi erbjuder catering med autentiska rätter som ger en unik matupplevelse.</p>
+        </section>
 
-    <!-- Meny -->
-    <section id="meny">
-        <h2>Meny</h2>
-        <p>Vi erbjuder ett brett urval av latinamerikanska specialiteter, inklusive tacos, empanadas, ceviche och mycket mer!</p>
-    </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Har du frågor eller vill boka catering? Kontakta oss på:</p>
+            <p><strong>Email:</strong> <a href="mailto:donluchos.swe@gmail.com">donluchos.swe@gmail.com</a></p>
+            <p><strong>Telefon:</strong> 070-409 09 13</p>
+        </section>
+    </main>
 
-    <!-- Kontakt -->
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p>Har du frågor eller vill boka catering? Kontakta oss på:</p>
-        <p><strong>Email:</strong> <a href="mailto:donluchos.swe@gmail.com">donluchos.swe@gmail.com</a></p>
-        <p><strong>Telefon:</strong> 070-409 09 13</p>
-    </section>
-
-    <!-- Offert -->
-    <section id="offert">
-        <h2>Be om offert</h2>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Ditt namn" required>
-            <input type="email" name="email" placeholder="Din e-post" required>
-            <textarea name="message" placeholder="Berätta vad du behöver" rows="5" required></textarea>
-            <button type="submit">Skicka offertförfrågan</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Don Luchos Catering. Alla rättigheter förbehållna.</p>
     </footer>
